@@ -50,7 +50,7 @@ func Set(item CachableItem) error {
 // Get reads the cached data for a key and store into the given CachableItem
 // If key is not in cache, it will use the fetch function to get it from other places
 func Get(key string, item CachableItem, fetch func() (CachableItem, error)) error {
-	// get connecti on
+	// get connection
 	conn, ok := readerPool.Get().(redis.Conn)
 	if !ok {
 		return fmt.Errorf(eCannotGetConnection)

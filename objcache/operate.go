@@ -89,5 +89,11 @@ func Get(key string, item CachableItem, fetch func() (CachableItem, error)) erro
 	if err != nil {
 		return err
 	}
-	return Get(key, item, fetch)
+	// return the fetched data
+	// complicated because item (addresses) might not be assignable
+	buffer, err := fetched.Encode()
+	if err != nil {
+		return err
+	}
+	return item.Decode(buffer)
 }

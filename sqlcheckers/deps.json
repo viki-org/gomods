@@ -1,0 +1,12 @@
+{
+   "github.com/lib/pq" : {
+      "type" : "git",
+      "repo" : "github.com/lib/pq",
+      "version" : "b1d1c3e32b52c49f3e29622b3d88755f6c2c5cd7"
+   },
+   "gopkg.in/check.v1" : {
+      "type" : "git",
+      "repo" : "gopkg.in/check.v1",
+      "version" : "v1"
+   }
+}

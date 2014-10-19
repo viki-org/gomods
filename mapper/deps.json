@@ -1,6 +1,6 @@
 {
    "github.com/viki-org/gomods" : {
-      "version" : "v0.0.2",
+      "version" : "v0.0.4",
       "type" : "git",
       "repo" : "github.com/viki-org/gomods"
    },

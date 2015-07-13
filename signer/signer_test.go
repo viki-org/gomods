@@ -37,7 +37,7 @@ func TestSignURL(t *testing.T) {
 
 	// Precomputed with node
 	expectedSig := "3bcc03505a4e4f05ea8c9ba1979b788dcb35af94"
-  expectedSignedURL := "https://api.viki.io/v4/movies.json?app=" + testAppId + "&sig=" + expectedSig + "&sort=views&t=" + strconv.FormatInt(now.Unix(), 10)
+	expectedSignedURL := "https://api.viki.io/v4/movies.json?app=" + testAppId + "&sig=" + expectedSig + "&sort=views&t=" + strconv.FormatInt(now.Unix(), 10)
 
 	host := "https://api.viki.io"
 	path := "/v4/movies.json?sort=views"
